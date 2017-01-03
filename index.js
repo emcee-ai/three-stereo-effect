@@ -103,7 +103,7 @@ module.exports = function(THREE, renderer) {
 
 			// left
 
-			_cameraL.projectionMatrix.makeFrustum(
+			_cameraL.projectionMatrix.makePerspective(
 				- _outer,
 				_inner,
 				_bottom,
@@ -118,7 +118,7 @@ module.exports = function(THREE, renderer) {
 
 			// right
 
-			_cameraR.projectionMatrix.makeFrustum(
+			_cameraR.projectionMatrix.makePerspective(
 				- _inner,
 				_outer,
 				_bottom,
